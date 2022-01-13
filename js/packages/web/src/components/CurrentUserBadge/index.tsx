@@ -21,8 +21,7 @@ import {
 import { useMeta, useSolPrice } from '../../contexts';
 import { useTokenList } from '../../contexts/tokenList';
 import { TokenCircle } from '../Custom';
-// const cog = require('../../../public/cog.svg');
-// const sol = require('../../../public/sol.svg');
+
 
 ('@solana/wallet-adapter-base');
 
@@ -415,7 +414,8 @@ export const Cog = () => {
         }
       >
         <Button className="wallet-key">
-          <img src={'./cog.svg'} />
+          {/* <img src={'./cog.svg'} /> */}
+          <img src={"http://45.119.82.72:8022/images/uploaded/cog.svg"} />
         </Button>
       </Popover>
     </div>

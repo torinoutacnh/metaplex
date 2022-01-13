@@ -34,8 +34,6 @@ import {
   useAuctions,
 } from '../../hooks';
 
-//const bell = require('../../../public/bell.svg')
-
 interface NotificationCard {
   id: string;
   title: string;
@@ -570,7 +568,7 @@ export function Notifications() {
 
   const justContent = (
     <Popover placement="bottomLeft" content={content} trigger="click">
-      <img src={'./bell.svg'} style={{ cursor: 'pointer' }} />
+      <img src={"http://45.119.82.72:8022/images/uploaded/bell.svg"} style={{ cursor: 'pointer' }} />
       {!!notifications.length && <div className="mobile-notification">{notifications.length - 1}</div>}
     </Popover>
   );
