@@ -5,6 +5,7 @@ import '../styles/index.less';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
+    // eslint-disable-next-line react/react-in-jsx-scope
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />

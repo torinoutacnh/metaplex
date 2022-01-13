@@ -8,7 +8,7 @@ html {
 }
 #root {
   height: 100%;
-  font-family: 'Graphik Web', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 #root::before {
@@ -29,7 +29,7 @@ body {
 
   font-style: normal;
   font-weight: normal;
-  font-family: 'Graphik Web' !important;
+  font-family: 'Roboto' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -38,9 +38,9 @@ body {
   pointer-events: none;
 }
 
-.ant-layout {
-  background: transparent !important;
-}
+// .ant-layout {
+//   background: transparent !important;
+// }
 
 img:not([src]) {
   visibility: hidden;
@@ -55,7 +55,7 @@ img:not([src]) {
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace, 'Roboto';
 }
 
 .app-logo {
@@ -208,7 +208,7 @@ h1 {
   font-size: 2rem;
 }
 .ant-btn:hover {
-  background-color: transparent !important;
+  background-color: #ffab76 !important;
 }
 .ant-steps-item-process
   > .ant-steps-item-container
@@ -246,8 +246,8 @@ h1 {
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
-  background-color: transparent !important;
   color: white;
+  background-color: chocolate;
   &.secondary-btn {
     color: @black-100;
     background: @metaplex-primary-color !important;
@@ -258,29 +258,29 @@ h1 {
 
     &:hover,
     &:focus {
-      background: transparent !important;
+      //background: transparent !important;
       border-color: @metaplex-primary-color !important;
       color: @metaplex-primary-color !important;
     }
 
     &:disabled,
     &:disabled &:hover {
-      color: rgba(255, 255, 255, 0.5) !important;
-      background: #1e1e1e !important;
+      color: rgba(231, 156, 17, 0.733) !important;
+      background: rgb(189, 122, 68) !important;
       border: none;
     }
   }
 
   &.black-btn {
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(98, 202, 13, 0.05);
     border-color: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     width: fit-content;
 
     &:hover,
     &:focus {
-      background: transparent;
+      background: black;
       border-color: rgba(255, 255, 255, 0.05);
       color: #ffffff;
     }

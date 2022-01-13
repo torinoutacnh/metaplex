@@ -21,6 +21,8 @@ import {
 import { useMeta, useSolPrice } from '../../contexts';
 import { useTokenList } from '../../contexts/tokenList';
 import { TokenCircle } from '../Custom';
+// const cog = require('../../../public/cog.svg');
+// const sol = require('../../../public/sol.svg');
 
 ('@solana/wallet-adapter-base');
 
@@ -381,9 +383,8 @@ export const Cog = () => {
                 // works: https://localhost/#/?network=devnet
                 const windowHash = window.location.hash;
                 routerSearchParams.set('network', network);
-                const nextLocationHash = `${
-                  windowHash.split('?')[0]
-                }?${routerSearchParams.toString()}`;
+                const nextLocationHash = `${windowHash.split('?')[0]
+                  }?${routerSearchParams.toString()}`;
                 window.location.hash = nextLocationHash;
                 window.location.reload();
               }}
@@ -414,7 +415,7 @@ export const Cog = () => {
         }
       >
         <Button className="wallet-key">
-          <img src="/cog.svg" />
+          <img src={'./cog.svg'} />
         </Button>
       </Popover>
     </div>
@@ -476,7 +477,7 @@ export const CurrentUserBadgeMobile = (props: {
         <span className="balance-title">Balance</span>
         <span>
           <span className="sol-img-wrapper">
-            <img src="/sol.svg" width="10" />
+            <img src={'./sol.svg'} width="10" />
           </span>{' '}
           {formatNumber.format(balance)}&nbsp;&nbsp; SOL{' '}
           <span

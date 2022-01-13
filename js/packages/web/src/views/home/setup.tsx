@@ -56,7 +56,7 @@ export const SetupView = () => {
 
     // TODO: process errors
 
-    await setStoreForOwner(undefined);
+    //await setStoreForOwner(undefined);
     await setStoreForOwner(wallet.publicKey.toBase58());
 
     history.push('/admin');

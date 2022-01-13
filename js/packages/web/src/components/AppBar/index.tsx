@@ -110,7 +110,7 @@ export const MetaplexMenu = () => {
 export const LogoLink = () => {
   return (
     <Link to={`/`}>
-      <img src={'/metaplex-logo.svg'} />
+      <img style={{ width: "auto", height: "53px" }} src={'../vr-1 (2).png'} />
     </Link>
   );
 };
