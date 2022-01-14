@@ -110,7 +110,7 @@ export const MetaplexMenu = () => {
 export const LogoLink = () => {
   return (
     <Link to={`/`}>
-      <img style={{ width: "auto", height: "53px" }} src={'http://45.119.82.72:8022/images/uploaded/GymLogo2.png'} />
+      <img style={{ width: "auto", height: "53px" }} src={'https://res.cloudinary.com/design123/image/upload/v1642135260/fboqwxpx15wf9p7hx9to.png'} />
     </Link>
   );
 };
